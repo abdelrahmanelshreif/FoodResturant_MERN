@@ -1,0 +1,25 @@
+nav {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444444;
+  text-transform: uppercase;
+  margin-right: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: coral;
+}
+
+nav img {
+  max-width: 100%;
+  height: auto;
+}

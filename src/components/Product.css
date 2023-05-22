@@ -1,0 +1,28 @@
+.menu-item-card {
+    display: inline-block;
+    width: calc(25% - 20px); 
+    margin: 10px;
+    vertical-align: top;
+  }
+  
+.menu-item-image {
+    height: 250px; 
+  }
+  
+.menu-item-details {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+.menu-item-title {
+    margin-bottom: 10px;
+  }
+  
+.menu-item-price {
+    margin-bottom: 10px;
+  }
+  
+.menu-item-button {
+    display: inline-block;
+  }
+  

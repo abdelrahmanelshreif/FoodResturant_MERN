@@ -1,0 +1,342 @@
+/* Header */
+header {
+  /* background: url("./../imgs/3.jpg") center transparent no-repeat; */
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  height: auto;
+  overflow: hidden;
+  /* opacity: .7; */
+  padding: 25px 0px;
+  margin-top: 0px;
+}
+
+header .row {
+  margin: 50px 0px;
+}
+
+header:hover {
+  opacity: 1;
+}
+
+header h5 {
+  color: #7c0f28;
+  font-size: 55px;
+  line-height: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  width: 80%;
+}
+
+header p {
+  color: #333;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+
+header button {
+  width: 150px;
+  height: 50px;
+  background-color: #7c0f28;
+  border: 1px solid #7c0f28;
+  box-sizing: border-box;
+  text-align: center;
+  color: aliceblue;
+  margin: 20px 10px 20px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header button:last-of-type {
+  background-color: aliceblue;
+  color: black;
+}
+
+header button:hover {
+  transition: .2s ease-in-out;
+}
+
+header button:first-of-type:hover {
+  background-color: #fff;
+  color: #7c0f28;
+}
+
+header button:last-of-type:hover {
+  background-color: #7c0f28;
+  color: #fff;
+}
+
+
+/* Numbers */
+.numbers {
+  background-color: #a82d49;
+  padding: 20px 0px;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.numbers .row {
+  margin: 10px 0px;
+}
+
+.numbers h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0px;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.numbers h6 {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+/* Pride */
+.pride {
+  background-color: transparent;
+  padding: 25px 0px;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.pride img {
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.pride h2 {
+  font-size: 35px;
+  font-weight: bold;
+  width: 90%;
+  margin: 10px 0px;
+  color: #a82d49;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 50px;
+}
+
+.pride p {
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 28px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.pride button {
+  background-color: #a82d49;
+  border: 1px solid #a82d49;
+  box-sizing: border-box;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  margin-top: 20px;
+  transition: .2s ease;
+}
+
+.pride button a {
+  display: block;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pride button:hover a {
+  color: #a82d49;
+}
+
+.pride button:hover {
+  background-color: aliceblue;
+}
+
+.d-block,
+.w-100 {
+  display: inline-flexbox !important;
+  width: 40% !important;
+}
+
+.title {
+  text-align: center;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.menu-item {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-item-details {
+  margin-top: 10px;
+}
+
+.menu-item-title {
+  margin-bottom: 5px;
+}
+
+.menu-item-price {
+  font-weight: bold;
+}
+
+.menu-item-description {
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.container#faq {
+  margin-top: 50px;
+}
+
+.about-inline h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faq h4 span {
+  color: #fda541;
+}
+
+/* Testimonials section */
+#reviews {
+  padding: 60px 0;
+}
+
+.testimonials-color {
+  background-color: #a82d49;
+}
+
+.About-inline h3 {
+  font-size: 30px;
+  color: lavenderblush;
+  margin-bottom: 30px;
+}
+
+.quote2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quote2 div {
+  flex: 0 0 300px;
+  margin: 20px;
+  text-align: center;
+  background-color: #FF8;
+  padding: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.quote2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.quote2 p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.quote2 .author {
+  font-size: 14px;
+  color: #888;
+  margin-top: 15px;
+}
+
+.space100 {
+  margin-top: 100px;
+}
+
+
+.faq p {
+  font-size: 16px;
+  color: #666;
+}
+.video-action {
+  background-image: url(../../public/assets/images/home/watch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 450px;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+
+.video-action h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #a82d49;
+  padding-top: 40px;
+}
+
+.video-action p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #555;
+  padding-top: 20px;
+}
+
+/* .video-action .swipebox-video {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.video-action .intro-video-pop {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.video-action .intro-video-pop i {
+  margin-right: 10px;
+}
+
+.video-action .intro-video-pop:hover {
+  background-color: #222;
+} */

@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const port = 5000;
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-// require('dotenv').config();
+require('dotenv').config();
 
 // Import routes
 const routes = require("./src/routes/routes");
@@ -28,7 +28,7 @@ mongoose
   .then((result) => {
     app.listen(port, () => {
       console.log(
-        `Example app listening at http://localhost:${port} Connected To DB ♥`
+        `Example app listening at http://16.16.115.134:${port} Connected To DB ♥`
       );
     });
   })

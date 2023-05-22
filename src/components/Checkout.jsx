@@ -54,7 +54,7 @@ const Checkout = () => {
     e.preventDefault();
     const updatedFormData = { ...formData, itemList: state.map(item => item.title) };
     axios
-      .post('http://localhost:5000/api/checkout', updatedFormData)
+      .post('http://127.0.0.1:5000/api/checkout', updatedFormData)
       .then((response) => {
         console.log(response.data);
         // Redirect or show success message

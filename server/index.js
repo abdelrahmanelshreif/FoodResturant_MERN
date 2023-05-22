@@ -4,12 +4,12 @@ const bodyParser = require("body-parser");
 const port = 5000;
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-require("dotenv").config();
-const MONGODB_URI =
-  "mongodb+srv://abdelrahman93955:css@cluster0.en4bwyr.mongodb.net/FoodTimeResturant?retryWrites=true&w=majority";
+// require('dotenv').config();
 
 // Import routes
 const routes = require("./src/routes/routes");
+
+//Middleware
 const adminAuth = require("./src/middleware/adminAuth");
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,7 +22,9 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
 mongoose
-  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(
+    "mongodb+srv://abdelrahman93955:css@cluster0.en4bwyr.mongodb.net/FoodTimeResturant?retryWrites=true&w=majority"
+  )
   .then((result) => {
     app.listen(port, () => {
       console.log(

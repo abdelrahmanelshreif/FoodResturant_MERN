@@ -14,7 +14,7 @@
       setError('');
 
       try {
-        const response = await axios.post('http://localhost/login', { email, password } );;
+        const response = await axios.post('http://127.0.0.1:5000/login', { email, password } );;
 
         if (response) {
           console.log('User is an admin');

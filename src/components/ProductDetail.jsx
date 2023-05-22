@@ -14,7 +14,7 @@
 //   useEffect(() => {
 //     // Fetch the product details from your API using the 'id'
 //     // Replace `apiEndpoint` with your actual API endpoint
-//     fetch(`http://localhost:5000/api/FoodItems/${id}`)
+//     fetch(`http://127.0.0.1:5000/api/FoodItems/${id}`)
 //       .then((response) => response.json())
 //       .then((data) => setProduct(data))
 //       .catch((error) => console.log(error));
@@ -77,7 +77,7 @@ const ProductDetail = () => {
   useEffect(() => {
     // Fetch the product details from your API using the 'id'
     // Replace `apiEndpoint` with your actual API endpoint
-    fetch(`http://localhost:5000/api/FoodItems/${id}`)
+    fetch(`http://127.0.0.1:5000/api/FoodItems/${id}`)
       .then((response) => response.json())
       .then((data) => setProduct(data))
       .catch((error) => console.log(error));

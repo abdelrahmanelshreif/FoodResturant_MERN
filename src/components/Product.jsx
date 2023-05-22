@@ -1,7 +1,7 @@
-import'./Searchbar.css' 
+import './Searchbar.css'
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import'./Product.css'
+import './Product.css'
 
 
 const Product = () => {
@@ -11,7 +11,7 @@ const Product = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('http:/localhost/api/FoodItems')
+    fetch('http://localhost:5000/api/FoodItems')
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error(error));
@@ -79,15 +79,15 @@ const Product = () => {
           placeholder="Search by title"
           value={searchQuery}
           onChange={e => setSearchQuery(e.target.value)}
-          />
-          <button className="btn btn-outline-dark" onClick={handleSearch}>
-            Search
-          </button>
-        </div>
-        <div className="menu-items-grid">{renderProducts()}</div>
+        />
+        <button className="btn btn-outline-dark" onClick={handleSearch}>
+          Search
+        </button>
       </div>
-    );
-  };
-  
-  export default Product;
-  
+      <div className="menu-items-grid">{renderProducts()}</div>
+    </div>
+  );
+};
+
+export default Product;
+

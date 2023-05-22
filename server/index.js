@@ -25,7 +25,7 @@
   mongoose.set("strictQuery", false);
 
   mongoose
-    .connect("mongodb+srv://abdelrahman93955:css@cluster0.en4bwyr.mongodb.net/FoodTimeResturant?retryWrites=true&w=majority")
+    .connect(process.env.Db_URL)
     .then((result) => {
       app.listen(port, () => {
         console.log(

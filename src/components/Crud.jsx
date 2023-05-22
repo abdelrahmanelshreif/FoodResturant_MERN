@@ -23,7 +23,7 @@ const Crud = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/menu/add",
+        "http://localhost:5000/menu/add",
         addFormData
       );
       console.log(response.data);
@@ -60,7 +60,7 @@ const Crud = () => {
 
     try {
       const response = await axios.put(
-        `http://127.0.0.1:5000/menu/update/${updateFormData.id}`,
+        `http://localhost:5000/menu/update/${updateFormData.id}`,
         updateFormData
       );
       console.log(response.data);
@@ -90,7 +90,7 @@ const Crud = () => {
 
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:5000/menu/remove/${deleteFormData.id}`
+        `http://localhost:5000/menu/remove/${deleteFormData.id}`
       );
       console.log(response.data);
       // Reset the form field

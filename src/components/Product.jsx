@@ -11,7 +11,7 @@ const Product = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('/api/FoodItems')
+    fetch('http:/localhost/api/FoodItems')
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error(error));

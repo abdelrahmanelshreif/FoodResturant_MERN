@@ -28,7 +28,7 @@ mongoose
   .then((result) => {
     app.listen(port, () => {
       console.log(
-        `Example app listening at http://16.16.115.134:${port} Connected To DB ♥`
+        `Example app listening at http://127.0.0.1:${port} Connected To DB ♥`
       );
     });
   })

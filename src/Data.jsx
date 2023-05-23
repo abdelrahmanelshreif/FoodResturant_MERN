@@ -7,7 +7,7 @@ const Product = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('16.16.115.134:5000/api/FoodItems')
+    fetch('127.0.0.1:5000/api/FoodItems')
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error(error));

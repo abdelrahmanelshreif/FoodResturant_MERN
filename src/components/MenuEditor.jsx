@@ -12,7 +12,7 @@ const Menu = () => {
 
   const fetchMenuItems = async () => {
     try {
-      const response = await axios.get('http://16.16.115.134:5000/menu');
+      const response = await axios.get('http://127.0.0.1:5000/menu');
       const data = response.data;
       setMenuItems(data);
     } catch (error) {
@@ -30,7 +30,7 @@ const Menu = () => {
 
   const handleAddItem = async () => {
     try {
-      const response = await axios.post('http://16.16.115.134:5000/menu/add', {
+      const response = await axios.post('http://127.0.0.1:5000/menu/add', {
         title: newItemName,
       });
       const newItem = response.data;
@@ -49,7 +49,7 @@ const Menu = () => {
         return;
       }
   
-      await axios.delete(`http://16.16.115.134:5000/menu/remove/${itemToRemove._id}`);
+      await axios.delete(`http://127.0.0.1:5000/menu/remove/${itemToRemove._id}`);
       const updatedItems = menuItems.filter((item) => item.title !== removeItemName);
       setMenuItems(updatedItems);
       setRemoveItemName('');

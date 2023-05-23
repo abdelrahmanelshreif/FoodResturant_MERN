@@ -21,6 +21,13 @@ app.use(cookieParser());
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
+//credentials 
+app.get("/",(req,res) => {
+  res.setHeader("Acess-Control-Allow-Credentials",true);
+  res.send("API is Running..")
+})
+
+
 mongoose
   .connect(
     "mongodb+srv://abdelrahman93955:css@cluster0.en4bwyr.mongodb.net/FoodTimeResturant?retryWrites=true&w=majority"
@@ -37,7 +44,7 @@ mongoose
   });
 
 // Use routes
-app.use("/", routes);
+app.use("/api", routes);
 
 //---------------------------------
 //Authorization
